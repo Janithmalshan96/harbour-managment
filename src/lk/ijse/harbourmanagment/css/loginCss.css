@@ -1,0 +1,35 @@
+
+.main{
+    -fx-background-color: white;
+}
+
+.bg_login{
+    -fx-background-color: linear-gradient(from 0% 50% to 100% 100%, #46b7ff, #890ccd);
+}
+
+.right_panel_label{
+    -fx-text-fill: #ffffff;
+    -fx-text-transform: uppercase;
+}
+
+
+.login_btn{
+    -fx-text-fill: #ffffff;
+    -fx-text-transform: uppercase;
+    -fx-background-color: linear-gradient(from 0% 50% to 100% 100%, #46b7ff, #890ccd);
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-border-width: 0px;
+    -fx-cursor: hand;
+}
+
+.cancel_btn{
+    -fx-text-fill: #46b7ff;
+    -fx-text-transform: uppercase;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(from 0% 50% to 100% 100%, #46b7ff, #890ccd);
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}

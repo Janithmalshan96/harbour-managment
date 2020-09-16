@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.harbourmanagment.controller.PaymentController">
+   <children>
+      <JFXTextField fx:id="txtBoatIdPayment" labelFloat="true" layoutX="32.0" layoutY="246.0" prefHeight="25.0" prefWidth="197.0" promptText="Boat Id" />
+      <JFXTextField fx:id="txtAmountPayment" labelFloat="true" layoutX="180.0" layoutY="308.0" prefHeight="25.0" prefWidth="276.0" promptText="Amount" />
+      <JFXTextField fx:id="txtRegistrationIdPayment" labelFloat="true" layoutX="32.0" layoutY="308.0" prefHeight="25.0" prefWidth="128.0" promptText="Registration Id" />
+      <JFXRadioButton fx:id="radiobtnNewBoat" layoutX="68.0" layoutY="136.0" prefHeight="17.0" prefWidth="88.0" text="New Boat">
+         <toggleGroup>
+            <ToggleGroup fx:id="boatStatusRadioGroup" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radiobtnOldBoat" layoutX="71.0" layoutY="175.0" prefHeight="17.0" prefWidth="88.0" text="Old Boat" toggleGroup="$boatStatusRadioGroup" />
+      <Label layoutX="28.0" layoutY="33.0" text="M A N A G E   P A M E N T">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddPayment" buttonType="RAISED" layoutX="62.0" layoutY="379.0" onAction="#onActionAddPayment" prefHeight="29.0" prefWidth="122.0" styleClass="button-save" stylesheets="@../css/commonStyles.css" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdatePayment" buttonType="RAISED" layoutX="301.0" layoutY="379.0" onAction="#onActionUpdatePayment" prefHeight="29.0" prefWidth="122.0" styleClass="button-update" stylesheets="@../css/commonStyles.css" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXDatePicker fx:id="datePaymentDetail" defaultColor="#0d0d0d" layoutX="826.0" layoutY="34.0" onAction="#onActionDatePaymentDetail" prefHeight="25.0" prefWidth="250.0" promptText="Date" />
+      <TableView fx:id="tblAllPayment" layoutX="487.0" layoutY="84.0" prefHeight="412.0" prefWidth="679.0" style="-fx-background-radius: 10;" styleClass="stage-rounded" stylesheets="@../css/commonStyles.css">
+        <columns>
+          <TableColumn prefWidth="78.0" text="Payment Id" />
+          <TableColumn prefWidth="55.0" text="Boad Id" />
+            <TableColumn prefWidth="134.0" text="Boat Name" />
+            <TableColumn prefWidth="135.0" text="Date" />
+            <TableColumn prefWidth="149.0" text="Registration Id" />
+            <TableColumn prefWidth="126.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label layoutX="535.0" layoutY="38.0" text="S E A R C H    P A Y M E N T    B Y   D A T E ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="105.0" text="SELECT BOAT TYPE : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPaymentId" layoutX="256.0" layoutY="180.0" prefHeight="25.0" prefWidth="197.0" promptText="Payment_Id" />
+      <JFXDatePicker fx:id="txtDatePicker" defaultColor="#224cd3" layoutX="256.0" layoutY="248.0" prefHeight="25.0" prefWidth="197.0" promptText="Date" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.harbourmanagment.controller.ManageBoatController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="33.0" layoutY="30.0" prefHeight="51.0" prefWidth="309.0" text="M A N A G E    O W N E R">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtBoatName" labelFloat="true" layoutX="538.0" layoutY="140.0" prefHeight="30.0" prefWidth="410.0" promptText="Boat Name" />
+      <JFXTextField fx:id="txtBoatColour" labelFloat="true" layoutX="746.0" layoutY="201.0" prefHeight="30.0" prefWidth="199.0" promptText="Boat Colour" />
+      <JFXTextField fx:id="txtBoatLength" labelFloat="true" layoutX="958.0" layoutY="201.0" prefHeight="30.0" prefWidth="199.0" promptText="Boat Length" />
+      <JFXTextField fx:id="txtBoatType" labelFloat="true" layoutX="536.0" layoutY="201.0" prefHeight="30.0" prefWidth="199.0" promptText="Boat Type" />
+      <JFXTextField fx:id="txtBoatId" labelFloat="true" layoutX="537.0" layoutY="83.0" prefHeight="30.0" prefWidth="199.0" promptText="Boat_ID" />
+      <JFXButton fx:id="btnSearchBoatId" buttonType="RAISED" layoutX="743.0" layoutY="86.0" onAction="#onActionSearchBoatId" styleClass="button-search" stylesheets="@../css/commonStyles.css" text="Search" />
+      <JFXButton fx:id="btnOwnerAndBoatAdd" buttonType="RAISED" layoutX="331.0" layoutY="260.0" onAction="#onActionOwnerAndBoatAdd" prefHeight="30.0" prefWidth="88.0" styleClass="button-save" stylesheets="@../css/commonStyles.css" text="Add" />
+      <JFXButton fx:id="btnOwnerAndBoatDelete" buttonType="RAISED" layoutX="565.0" layoutY="260.0" onAction="#onActionOwnerAndBoatDelete" prefHeight="30.0" prefWidth="88.0" styleClass="button-remove" stylesheets="@../css/commonStyles.css" text="Delete" />
+      <JFXButton fx:id="btnOwnerAndBoatUpdate" buttonType="RAISED" layoutX="442.0" layoutY="260.0" onAction="#onActionOwnerAndBoatUpdate" prefHeight="30.0" prefWidth="88.0" styleClass="button-update" stylesheets="@../css/commonStyles.css" text="Update" />
+      <JFXTextField fx:id="txtOwnerId" editable="false" labelFloat="true" layoutX="33.0" layoutY="84.0" prefHeight="30.0" prefWidth="146.0" promptText="Owner_ID" AnchorPane.topAnchor="84.0" />
+      <JFXTextField fx:id="txtOwnerName" labelFloat="true" layoutX="210.0" layoutY="84.0" prefHeight="30.0" prefWidth="199.0" promptText="Owner Name" AnchorPane.topAnchor="84.0" />
+      <JFXTextField fx:id="txtOwnerAddress" labelFloat="true" layoutX="33.0" layoutY="136.0" prefHeight="37.0" prefWidth="440.0" promptText="Owner Address" />
+      <JFXTextField fx:id="txtOwnerNic" labelFloat="true" layoutX="33.0" layoutY="201.0" prefHeight="30.0" prefWidth="186.0" promptText="NIC" />
+      <JFXTextField fx:id="txtOwnerContact" labelFloat="true" layoutX="245.0" layoutY="201.0" prefHeight="30.0" prefWidth="220.0" promptText="Contact" />
+      <JFXButton fx:id="btnSearchOwnerName" buttonType="RAISED" layoutX="409.0" layoutY="84.0" onAction="#onActionSearchOwnerName" styleClass="button-search" stylesheets="@../css/commonStyles.css" text="Search" AnchorPane.topAnchor="84.0" />
+      <Separator layoutX="482.0" layoutY="67.0" orientation="VERTICAL" prefHeight="174.0" prefWidth="20.0" />
+      <TableView fx:id="tblManageOwnerAndBoat" layoutX="16.0" layoutY="320.0" onMouseClicked="#onMouseClickedManageOwnerAndBoat" prefHeight="188.0" prefWidth="1147.0" style="-fx-background-radius: 10;" styleClass="stage-rounded" stylesheets="@../css/commonStyles.css">
+        <columns>
+          <TableColumn prefWidth="168.0" text="Boat_ID" />
+            <TableColumn prefWidth="313.0" text="Boat Name" />
+            <TableColumn prefWidth="210.0" text="Boat Colour" />
+            <TableColumn minWidth="0.0" prefWidth="230.0" text="Boat Length" />
+            <TableColumn minWidth="9.0" prefWidth="224.0" text="Boat Type" />
+        </columns>
+      </TableView>
+      <Label contentDisplay="CENTER" layoutX="537.0" layoutY="30.0" prefHeight="51.0" prefWidth="309.0" text="M A N A G E    B O A T ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

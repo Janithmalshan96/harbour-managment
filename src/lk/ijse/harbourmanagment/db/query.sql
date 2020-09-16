@@ -1,0 +1,1 @@
+select b.bid,b.name,b.length,b.colour,b.boat_type from owner o,obdetail d,boat b where o.oid=d.oid AND b.bid=d.bid AND o.name='';

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneLogOut" prefHeight="685.0" prefWidth="1200.0" styleClass="main_bg" stylesheets="@../css/dashBoardCss.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.harbourmanagment.controller.DashBoardController">
+   <children>
+      <AnchorPane layoutY="-54.0" prefHeight="142.0" prefWidth="899.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox layoutY="37.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="37.0">
+               <children>
+                  <JFXButton fx:id="btnDashboard" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#onActionDashboard" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text="DASHBOARD" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Windows_Phone_Store_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnManageSchedule" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#onActionManageSchedule" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text="Schedule" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Schedule_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnManageFishermen" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#onActionManageFishermen" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text="Fisherman" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Male_User_104px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnManageBoat" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#onActionManageBoat" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text=" Boat" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Fishing_Boat_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPayment" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#onActionPayment" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text="PAYMENT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Coins_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnReport" alignment="CENTER" buttonType="RAISED" cache="true" contentDisplay="TOP" onAction="#onActionReport" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text="REPORT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Report_Card_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnLogOut" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" onAction="#onActionLogOut" prefHeight="200.0" prefWidth="165.0" styleClass="menu_button" stylesheets="@../css/dashBoardCss.css" text="QUIT" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assests/icons8_Logout_Rounded_Up_96px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <JFXTextField fx:id="lblTime" alignment="CENTER" editable="false" layoutX="861.0" layoutY="5.0" prefHeight="25.0" prefWidth="130.0">
+               <unFocusColor>
+                  <LinearGradient endX="1.0" endY="0.3380952380952381" startX="1.0">
+                     <stops>
+                        <Stop color="#1430cd" />
+                        <Stop color="#132fcc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </unFocusColor>
+            </JFXTextField>
+            <JFXTextField fx:id="lblDate" alignment="CENTER" editable="false" layoutX="712.0" layoutY="5.0" unFocusColor="#132fcc" />
+         </children>
+      </AnchorPane>
+      <HBox layoutX="1036.0" prefHeight="46.0" prefWidth="160.0" spacing="5.0">
+         <children>
+            <JFXButton fx:id="btnMinimiz" alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="20.0" layoutY="20.0" onAction="#onActionMinimiz" opacity="0.4" prefHeight="18.0" prefWidth="11.0" styleClass="button-search" stylesheets="@../css/commonStyles.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8_Minus_96px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnRestore" alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="98.0" layoutY="20.0" onAction="#onActionRestore" opacity="0.4" prefHeight="30.0" prefWidth="27.0" styleClass="button-search" stylesheets="@../css/commonStyles.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8_Maximize_Window_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" onAction="#onActionClose" opacity="0.4" prefHeight="30.0" prefWidth="17.0" styleClass="button-remove" stylesheets="@../css/commonStyles.css" text=" ">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assests/icons8_Delete_96px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="2.0" />
+         </padding>
+      </HBox>
+      <AnchorPane fx:id="anchorPane" layoutX="14.0" layoutY="151.0" prefHeight="520.0" prefWidth="1180.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

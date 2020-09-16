@@ -1,0 +1,31 @@
+
+.main_bg{
+    -fx-background-color: white;
+}
+
+.top_header{
+    -fx-text-fill: #ffffff;
+    -fx-text-transform: uppercase;
+    -fx-background-color: linear-gradient(from 0% 50% to 100% 100%, #46b7ff, #890ccd);
+}
+
+.menu_button{
+    -fx-text-fill: #ffffff;
+    -fx-text-transform: uppercase;
+    -fx-background-color: linear-gradient(from 0% 50% to 100% 100%, #8abdff, #876bcd);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 0px;
+    -fx-cursor: hand;
+}
+
+.menu_button:hover{
+    -fx-text-fill: #0e93ff;
+    -fx-text-transform: uppercase;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(from 0% 50% to 100% 100%, #46b7ff, #890ccd);
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}

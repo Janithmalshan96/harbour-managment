@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="503.0" prefWidth="855.0" styleClass="main" stylesheets="@../css/loginCss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.harbourmanagment.controller.LoginController">
+   <children>
+      <JFXTextField fx:id="txtUserName" focusColor="#dde6ff" layoutX="79.0" layoutY="203.0" prefHeight="35.0" prefWidth="327.0" unFocusColor="#c2a3a3" AnchorPane.leftAnchor="79.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtUserPassword" focusColor="#dde6ff" labelFloat="true" layoutX="79.0" layoutY="298.0" prefHeight="35.0" prefWidth="327.0" styleClass="inputFeilds" unFocusColor="#c2a3a3" AnchorPane.leftAnchor="79.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="btnLogin" alignment="CENTER" buttonType="RAISED" layoutX="79.0" layoutY="369.0" onAction="#onLoginAction" prefHeight="46.0" prefWidth="159.0" styleClass="login_btn" stylesheets="@../css/loginCss.css" text="CONTINUE" textFill="#c61010">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="548.0" layoutY="29.0" prefHeight="463.0" prefWidth="404.0" styleClass="bg_login" stylesheets="@../css/loginCss.css" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label layoutX="23.0" layoutY="178.0" styleClass="right_panel_label" stylesheets="@../css/loginCss.css" text="W E L C O M E    T O" textFill="WHITE" AnchorPane.leftAnchor="23.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="265.0" stylesheets="@../css/loginCss.css" text="Login to Access Dashboard" textFill="WHITE" AnchorPane.leftAnchor="23.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="198.0" stylesheets="@../css/loginCss.css" text="Harbour Management System" textFill="WHITE" AnchorPane.leftAnchor="23.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Separator layoutX="23.0" layoutY="246.0" prefWidth="200.0" AnchorPane.leftAnchor="23.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="57.0" fitWidth="55.0" layoutX="84.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/harbour_logo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="84.0" layoutY="184.0" stylesheets="@../css/loginCss.css" text="U S E R    N A M E" textFill="#6f6b6b" AnchorPane.leftAnchor="84.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="84.0" layoutY="281.0" stylesheets="@../css/loginCss.css" text="P A S S W O R D" textFill="#6f6b6b" AnchorPane.leftAnchor="84.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="cancel" alignment="CENTER" buttonType="RAISED" layoutX="247.0" layoutY="369.0" onAction="#cancelOnAction" prefHeight="46.0" prefWidth="159.0" styleClass="cancel_btn" stylesheets="@../css/loginCss.css" text="CANCEL" textFill="#c61010">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
